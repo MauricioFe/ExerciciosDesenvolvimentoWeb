@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - atividade 2</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Informações pessoais</legend>
+
+            <div>
+                <label for="Nome">Nome</label>
+                <input type="text" id="Nome">
+            </div>
+            <div>
+                <label for="E-mail">E-mail</label>
+                <input type="email" id="E-mail">
+            </div>
+            <div>
+                <label for="DatadeNascimento">Data de Nascimento</label>
+                <input type="date" id="DatadeNascimento">
+            </div>
+            <div>
+                <label for="Login">Login</label>
+                <input type="text" id="Login">
+            </div>
+            <div>
+                <label for="Senha">Senha</label>
+                <input type="password" id="Senha">
+            </div>
+            <div>
+                <label for="Estado">Estado</label>
+                <select>
+                    <option>MG</option>
+                    <option>SP</option>
+                    <option>RJ</option>
+                    <option>TO</option>
+                </select>
+            </div>
+            <div>
+                <p>Faixa etária</p>
+                <label for="menor">
+                    <input type="radio" name="maioridade" id="menor">
+                    Menor ou igual a 18 anos
+                </label>
+                <label for="maior">
+                    <input type="radio" name="maioridade" id="maior">
+                    Maior de 18 anos
+                </label>
+            </div>
+        </fieldset>
+        <div>
+            <input type="reset" value="Limpar formulário">
+            <input type="submit" value="Efetuar Cadastro">
+        </div>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>Informações pessoais</legend>
+
+            <div>
+                <label for="CodCliente">Código do Cliente</label>
+                <input type="text" id="CodCliente">
+            </div>
+            <div>
+                <label for="ValorCompra">Valor da Compra</label>
+                <input type="number" id="ValorCompra">
+            </div>
+            <div>
+                <p>Tipo de equipamento adquirido</p>
+                <label for="impressora">
+                    <input type="radio" name="equipamento" id="impressora">
+                    Impressora
+                </label>
+                <label for="notebook">
+                    <input type="radio" name="equipamento" id="notebook">
+                    Notebook
+                </label>
+                <label for="phone">
+                    <input type="radio" name="equipamento" id="phone">
+                    Smartphone
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Cadastrar compra">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Informações pessoais</legend>
+
+            <div>
+                <label for="CodCliente">Código do Cliente para pesquisa</label>
+                <input type="text" id="CodCliente">
+            </div>
+            <div>
+                <label for="ValorCompra">Retificação do valor da compra</label>
+                <input type="number" id="ValorCompra">
+            </div>
+
+
+            <div>
+                <input type="submit" value="Alterar valor da compra">
+            </div>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Artigo</legend>
+
+            <div>
+                <label for="Titulo">Título</label>
+                <input type="text" id="titulo">
+            </div>
+            <div>
+                <label for="DataPublicacao">Data da publicação</label>
+                <input type="date" id="DataPublicacao">
+            </div>
+            <div>
+                <label for="palavrasChave">Palavras-chave do artigo</label>
+                <textarea id="palavrasChave" cols="70" rows="6"></textarea>
+            </div>
+            <div>
+                <label for="arquivo">Enviar artigo(formato .pdf, máximo de 50 kb):</label>
+                <input type="file">
+            </div>
+            <div>
+                <input type="submit" value="Enviar artigo">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
