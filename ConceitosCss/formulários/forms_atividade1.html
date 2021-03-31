@@ -16,84 +16,93 @@
     <form action="">
         <fieldset>
             <h2>Dados pessoais</h2>
-            <div class="input-group">
-                <div class="input">
-                    <label for="Nome">Nome</label>
-                    <input type="text" name="Nome" id="Nome">
-                </div>
-                <div class="input">
-                    <label for="Endereco">Endereço</label>
-                    <input type="text" name="Endereco" id="Endereco">
-                </div>
+
+            <div class="input">
+                <label for="Nome">Nome</label>
+                <input type="text" name="Nome" id="Nome">
             </div>
-            <div class="input-group">
-                <div class="input">
-                    <label for="Cidade">Cidade</label>
-                    <input type="text" name="Cidade" id="Cidade">
-                </div>
-                <div class="input">
-                    <label for="Estado">Estado</label>
-                    <select>
-                        <option>MG</option>
-                        <option>SP</option>
-                        <option>RJ</option>
-                        <option>TO</option>
-                    </select>
-                </div>
+            <div class="input">
+                <label for="Endereco">Endereço</label>
+                <input type="text" name="Endereco" id="Endereco">
+            </div>
+
+            <div class="input">
+                <label for="Cidade">Cidade</label>
+                <input type="text" name="Cidade" id="Cidade">
+            </div>
+            <div class="input">
+                <label for="Estado">Estado</label>
+                <select>
+                    <option>MG</option>
+                    <option>SP</option>
+                    <option>RJ</option>
+                    <option>TO</option>
+                </select>
+            </div>
+            <div class="div-btn">
+                <button>Salvar</button>
+                <button type="reset">Reset</button>
             </div>
         </fieldset>
         <fieldset>
             <h2>Dados profissionais</h2>
-            <div class="input-group">
-                <label for="Gerencia">
-                    <input type="radio" name="cargo" id="Gerencia">
-                    Gerência
-                </label>
-                <label for="Financeiro">
-                    <input type="radio" name="cargo" id="Financeiro">
-                    Financeiro
-                </label>
-                <label for="Recepcao">
-                    <input type="radio" name="cargo" id="Recepcao">
-                    Recpção
-                </label>
-                <label for="Administrativo">
-                    <input type="radio" name="cargo" id="Administrativo">
-                    Administrativo
-                </label>
-                <label for="Juridico">
-                    <input type="radio" name="cargo" id="Juridico">
-                    Juridico
-                </label>
+            <div class="flex-row">
+                <div class="input-group">
+                    <label for="Gerencia">
+                        <input type="radio" name="cargo" id="Gerencia">
+                        Gerência
+                    </label>
+                    <label for="Financeiro">
+                        <input type="radio" name="cargo" id="Financeiro">
+                        Financeiro
+                    </label>
+                    <label for="Recepcao">
+                        <input type="radio" name="cargo" id="Recepcao">
+                        Recpção
+                    </label>
+                    <label for="Administrativo">
+                        <input type="radio" name="cargo" id="Administrativo">
+                        Administrativo
+                    </label>
+                    <label for="Juridico">
+                        <input type="radio" name="cargo" id="Juridico">
+                        Juridico
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <p>Área de interesse</p>
+                    <label for="Computacao">
+                        <input type="checkbox" name="Computacao" id="Computacao">
+                        Computação
+                    </label>
+                    <label for="Biologia">
+                        <input type="checkbox" name="Biologia" id="Biologia">
+                        Biologia
+                    </label>
+                    <label for="Meio Ambiente">
+                        <input type="checkbox" name="Meio Ambiente" id="Meio Ambiente">
+                        Meio Ambiente
+                    </label>
+                    <label for="Engenharia">
+                        <input type="checkbox" name="Engenharia" id="Engenharia">
+                        Engenharia
+                    </label>
+                    <label for="História">
+                        <input type="checkbox" name="História" id="História">
+                        História
+                    </label>
+                </div>
             </div>
-            <div  class="input-group">
-                <p>Área de interesse</p>
-                <label for="Computacao">
-                    <input type="checkbox" name="Computacao" id="Computacao">
-                    Computação
-                </label>
-                <label for="Biologia">
-                    <input type="checkbox" name="Biologia" id="Biologia">
-                    Biologia
-                </label>
-                <label for="Meio Ambiente">
-                    <input type="checkbox" name="Meio Ambiente" id="Meio Ambiente">
-                    Meio Ambiente
-                </label>
-                <label for="Engenharia">
-                    <input type="checkbox" name="Engenharia" id="Engenharia">
-                    Engenharia
-                </label>
-                <label for="História">
-                    <input type="checkbox" name="História" id="História">
-                    História
-                </label>
-            </div>
-            <div>
+            <div class="div-textarea">
                 <label for="mini-curriculo">
                     Mini-curriculo
                     <textarea id="mini-curriculo" cols="70" rows="6"></textarea>
                 </label>
+            </div>
+            <div class="div-btn">
+                <button>Salvar</button>
+                <button type="reset">Reset</button>
             </div>
         </fieldset>
     </form>
