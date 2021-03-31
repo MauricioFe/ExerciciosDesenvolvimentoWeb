@@ -1,0 +1,120 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 70%;
+    margin-bottom: 24px;
+}
+
+form fieldset {
+    border: 0;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    border-radius: 2%;
+    padding: 15px;
+}
+
+form h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: auto 24px;
+}
+
+.input-group p {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 14px 24px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+form input, form select, form textarea {
+    background-color: #ffffff;
+    border: 0;
+    padding: 10px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+form input, form select, form select option, textarea:focus {
+    outline-color: #2fb86e;
+}
+
+form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+}
+
+.div-textarea {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.div-textarea textarea {
+    width: 100%;
+    margin-top: 10px;
+}
+
+div button {
+    width: 45%;
+    height: 56px;
+    border-radius: 8px;
+    background-color: #2fb86e;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 40px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 400ms;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file {
+    padding: 20px 10px;
+    background-color: #d3d3d3;
+    color: #222;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
