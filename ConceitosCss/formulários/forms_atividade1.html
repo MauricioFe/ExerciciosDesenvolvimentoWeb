@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <h2>Dados pessoais</h2>
+            <div class="input-group">
+                <div class="input">
+                    <label for="Nome">Nome</label>
+                    <input type="text" name="Nome" id="Nome">
+                </div>
+                <div class="input">
+                    <label for="Endereco">Endereço</label>
+                    <input type="text" name="Endereco" id="Endereco">
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input">
+                    <label for="Cidade">Cidade</label>
+                    <input type="text" name="Cidade" id="Cidade">
+                </div>
+                <div class="input">
+                    <label for="Estado">Estado</label>
+                    <select>
+                        <option>MG</option>
+                        <option>SP</option>
+                        <option>RJ</option>
+                        <option>TO</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <h2>Dados profissionais</h2>
+            <div class="input-group">
+                <label for="Gerencia">
+                    <input type="radio" name="cargo" id="Gerencia">
+                    Gerência
+                </label>
+                <label for="Financeiro">
+                    <input type="radio" name="cargo" id="Financeiro">
+                    Financeiro
+                </label>
+                <label for="Recepcao">
+                    <input type="radio" name="cargo" id="Recepcao">
+                    Recpção
+                </label>
+                <label for="Administrativo">
+                    <input type="radio" name="cargo" id="Administrativo">
+                    Administrativo
+                </label>
+                <label for="Juridico">
+                    <input type="radio" name="cargo" id="Juridico">
+                    Juridico
+                </label>
+            </div>
+            <div  class="input-group">
+                <p>Área de interesse</p>
+                <label for="Computacao">
+                    <input type="checkbox" name="Computacao" id="Computacao">
+                    Computação
+                </label>
+                <label for="Biologia">
+                    <input type="checkbox" name="Biologia" id="Biologia">
+                    Biologia
+                </label>
+                <label for="Meio Ambiente">
+                    <input type="checkbox" name="Meio Ambiente" id="Meio Ambiente">
+                    Meio Ambiente
+                </label>
+                <label for="Engenharia">
+                    <input type="checkbox" name="Engenharia" id="Engenharia">
+                    Engenharia
+                </label>
+                <label for="História">
+                    <input type="checkbox" name="História" id="História">
+                    História
+                </label>
+            </div>
+            <div>
+                <label for="mini-curriculo">
+                    Mini-curriculo
+                    <textarea id="mini-curriculo" cols="70" rows="6"></textarea>
+                </label>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

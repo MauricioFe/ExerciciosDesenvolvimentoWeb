@@ -1,0 +1,57 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 600px;
+}
+
+form fieldset {
+    width: 40%;
+    height: 450px;
+    border: 0;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    border-radius: 2%;
+    padding: 15px;
+}
+
+form h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.input {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 24px;
+}
+
+.input label {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+form input, form select , form textarea{
+    background-color: #ffffff;
+    border: 0;
+    padding: 10px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+form input, form select, form select option:focus {
+    outline-color: #2fb86e;
+}
+
+form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
