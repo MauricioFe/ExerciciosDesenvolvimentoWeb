@@ -1,0 +1,78 @@
+body {
+    background: #001051;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background: #004AAD;
+    margin-bottom: 20px;
+}
+
+.topo {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100px;
+}
+
+.topo ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.topo ul li {
+    margin: 0 20px;
+}
+
+.topo ul li a {
+    text-decoration: none;
+    color: #eee;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main h2 {
+    color: #eee;
+    margin-bottom: 15px;
+}
+
+.img-container {
+    flex: 5;
+}
+
+.img-container .img-fluid {
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    border-radius: 10px 0 0 10px;
+}
+
+.img-container-row .img-fluid:nth-child(1) {
+    border-radius: 0 10px 0 0;
+}
+
+.img-container-row .img-fluid:nth-child(3) {
+    border-radius: 0 0 10px 0;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1.65;
+}
