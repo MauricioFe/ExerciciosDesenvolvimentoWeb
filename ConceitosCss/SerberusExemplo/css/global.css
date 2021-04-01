@@ -1,0 +1,64 @@
+body {
+    background: #001051;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background: #004AAD;
+    margin-bottom: 20px;
+}
+
+.topo {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100px;
+}
+
+.topo ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.topo ul li {
+    margin: 0 20px;
+}
+
+.topo ul li a {
+    text-decoration: none;
+    color: #eee;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main h2 {
+    color: #eee;
+    margin-bottom: 15px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 15px;
+    background: #000722;
+}
+
+footer p {
+    text-align: center;
+    color: #eee;
+}
