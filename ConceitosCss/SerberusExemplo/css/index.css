@@ -76,3 +76,16 @@ main h2 {
     flex-direction: column;
     flex: 1.65;
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 15px;
+    background: #000722;
+}
+footer p {
+    text-align: center;
+    color: #eee;
+}
