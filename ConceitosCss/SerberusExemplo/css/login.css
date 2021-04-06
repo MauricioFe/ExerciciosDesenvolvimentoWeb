@@ -1,6 +1,17 @@
+header{
+    margin: 0;
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 main h1 {
     text-align: center;
     color: #d3d3d3;
+    margin-bottom: 30px;
 }
 
 form {
@@ -9,9 +20,7 @@ form {
 }
 
 form fieldset {
-    width: 80%;
-    height: 415px;
-    margin: 40px auto;
+    margin: 0px auto;
     padding: 15px;
     background: #001879;
     border-radius: 15px;
