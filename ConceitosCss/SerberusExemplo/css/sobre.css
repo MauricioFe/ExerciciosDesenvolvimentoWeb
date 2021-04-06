@@ -1,0 +1,153 @@
+* {
+    /*indica que o estilo vai ser 
+    aplicado a todos os elementos*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    border: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #004AAD;
+}
+
+.topo {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #d3d3d3;
+    font-size: 18px;
+}
+
+.title-section {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.paragrafos-sobre {
+    width: 50%;
+}
+
+.paragrafos-sobre p {
+    line-height: 46px;
+    /*Altura da linha (espaçamento entre as linhas)*/
+}
+
+.img-sobre {
+    width: 50%;
+}
+
+.img-sobre img {
+    width: 100%;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+fieldset {
+    width: 100%;
+    padding: 35px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 6px 4px 20px 0 rgb(0, 0, 0, 0.2);
+    /*tamanho da sombra em relação eixo x*/
+    /*tamanho da sombra em relação eixo y*/
+    /*esmaecimento da cor da sombra (efeito blur)*/
+    /*Indicar o quanto a sobra vai se espalhar*/
+    /*cor da sombra*/
+}
+
+fieldset h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.input-group input, .input-group textarea {
+    background-color: #ffffff;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 15px;
+    border: 0.5px solid black;
+}
+
+.input-group input:focus, .input-group textarea:focus {
+    border: 3px solid #004AAD;
+    outline: #004AAD;
+}
+
+.input-btn input {
+    width: 200px;
+    height: 56px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 4px;
+    background: #004AAD;
+}
+
+.input-btn input:hover {
+    /*hover é o efeito quando eu passo o ponteiro do mouse no seletor*/
+    background: #01367c;
+}
+#perguntas-frequentes>.container>ul {
+    margin: 0 auto 30px;
+}
+#perguntas-frequentes>.container>ul>li{
+    list-style: none;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 6px 4px 20px 0 rgb(0, 0, 0, 0.2);
+    padding: 30px;
+    margin: 15px 0;
+}
+
+footer {
+    height: 56px;
+    background: #01367c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #d3d3d3;
+}

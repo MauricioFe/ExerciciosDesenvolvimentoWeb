@@ -5,80 +5,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="shortcut icon" href="img/cerberus 1.png" type="image/png">
     <title>Serberus</title>
 </head>
 
 <body>
     <header>
-        <img src="img/Serberus.png" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="jogos.html">Jogos</a></li>
-                <li><a href="compras.html">Compras</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
+        <div class="topo">
+            <img src="img/cerberus 1.png" alt="logo">
+            <nav>
+                <a href="#">Home</a>
+                <a href="jogos.html">Jogos</a>
+                <a href="compras.html">Compras</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <h1>Sobre</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel reprehenderit sint temporibus fugit ipsam
-                doloribus officiis, dolorum fuga enim magni at similique consequatur, eaque ratione dolore ut nulla
-                iusto autem.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel reprehenderit sint temporibus fugit ipsam
-                doloribus officiis, dolorum fuga enim magni at similique consequatur, eaque ratione dolore ut nulla
-                iusto autem.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel reprehenderit sint temporibus fugit ipsam
-                doloribus officiis, dolorum fuga enim magni at similique consequatur, eaque ratione dolore ut nulla
-                iusto autem.</p>
+        <section id="sobre">
+            <h2 class="title-section">Sobre</h2>
+            <div class="container">
+                <div class="paragrafos-sobre bacon">
+                    <p class="bacon">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel reprehenderit sint
+                        temporibus fugit
+                        ipsam
+                        doloribus officiis, dolorum fuga enim magni at similique consequatur, eaque ratione dolore ut
+                        nulla
+                        iusto autem.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel reprehenderit sint temporibus fugit
+                        ipsam
+                        doloribus officiis, dolorum fuga enim magni at similique consequatur, eaque ratione dolore ut
+                        nulla
+                        iusto autem.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel reprehenderit sint temporibus fugit
+                        ipsam
+                        doloribus officiis, dolorum fuga enim magni at similique consequatur, eaque ratione dolore ut
+                        nulla
+                        iusto autem.</p>
+                </div>
+                <div class="img-sobre">
+                    <img src="img/sobre.svg" alt="ilustração que identifica sobre a empresa">
+                </div>
+            </div>
         </section>
-        <section>
-            <h1>Contato</h1>
-            <form action="">
-                <fieldset>
-                    <legend>Entre em contato com a gente</legend>
-
-                    <div>
-                        <label for="Titulo">Nome</label>
-                        <input type="text" id="titulo">
-                    </div>
-                    <div>
-                        <label for="DataPublicacao">Email</label>
-                        <input type="email" id="DataPublicacao">
-                    </div>
-                    <div>
-                        <label for="palavrasChave">Palavras-chave do artigo</label>
-                        <textarea id="palavrasChave" cols="70" rows="6"></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar Dúvida">
-                    </div>
-                </fieldset>
-            </form>
+        <section id="contato">
+            <h2 class="title-section">Contato</h2>
+            <div class="container">
+                <!-- shift+alt+f -> atalho de identação -->
+                <form action="">
+                    <fieldset>
+                        <h3>Entre em contato com a gente</h3>
+                        <div class="input-group">
+                            <label for="titulo">Nome</label>
+                            <input type="text" id="titulo">
+                        </div>
+                        <div class="input-group">
+                            <label for="DataPublicacao">Email</label>
+                            <input type="email" id="DataPublicacao">
+                        </div>
+                        <div class="input-group">
+                            <label for="palavrasChave">Palavras-chave do artigo</label>
+                            <textarea id="palavrasChave" cols="70" rows="6"></textarea>
+                        </div>
+                        <div class="input-btn">
+                            <input type="submit" value="Enviar Dúvida">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </section>
-        <section>
-            <h1>Perguntas frequentes</h1>
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rerum magni, saepe, nulla
-                    recusandae atque quae explicabo?</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rerum magni, saepe, nulla
-                    recusandae atque quae explicabo?</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rerum magni, saepe, nulla
-                    recusandae atque quae explicabo?</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rerum magni, saepe, nulla
-                    recusandae atque quae explicabo?</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rerum magni, saepe, nulla
-                    recusandae atque quae explicabo?</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rerum magni, saepe, nulla
-                    recusandae atque quae explicabo?</li>
-            </ul>
+        <section id="perguntas-frequentes">
+            <h2 class="title-section">Perguntas frequentes</h2>
+            <div class="container">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rerum magni, saepe, nulla
+                        recusandae atque quae explicabo?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rerum magni, saepe, nulla
+                        recusandae atque quae explicabo?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rerum magni, saepe, nulla
+                        recusandae atque quae explicabo?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rerum magni, saepe, nulla
+                        recusandae atque quae explicabo?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rerum magni, saepe, nulla
+                        recusandae atque quae explicabo?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rerum magni, saepe, nulla
+                        recusandae atque quae explicabo?</li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
-        <center>
-            <p>&copy; 2021 SERBERUS MITIC GAMES</p>
-        </center>
+        <p>&copy; 2021 SERBERUS MITIC GAMES</p>
     </footer>
 </body>
 
