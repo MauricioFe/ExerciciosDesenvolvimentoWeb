@@ -2,6 +2,15 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
 .card {
     width: 320px;
     padding: 35px;
@@ -9,22 +18,13 @@ body {
     border: 1px solid #d3d3d3;
     box-shadow: 3px 2px 8px 0 #22222222;
     border-radius: 6px;
-    display: inline-block;
 }
-
-body .card:nth-child(1) {
-    position: static;
+.container .card:nth-child(2){
+    transform: scale(1.03);
 }
-
-body .card:nth-child(2) {
-    border:dashed thick #d3d3d3;
+.best{
+    background: #001051;
 }
-
-body .card:nth-child(3) {
-    position: relative;
-    border:groove medium #d3d3d3;
-}
-
 .card-content {
     display: flex;
     flex-direction: column;
