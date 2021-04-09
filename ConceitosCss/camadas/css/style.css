@@ -2,7 +2,30 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 
-.container{
+.img-back-flip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/game2.svg');
+    background-position-x: 1050px;
+    background-position-y: 200px;
+    background-size: 50% 45%, contain, 3em;
+    background-repeat: no-repeat;
+}
+
+.img-back-night {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/game.svg');
+    background-position-x: -0px;
+    background-position-y: 200px;
+    background-size: 20% 45%, contain, 3em;
+    background-repeat: no-repeat;
+
+}
+
+.container {
     width: 80%;
     display: flex;
     justify-content: center;
@@ -18,13 +41,23 @@ body {
     border: 1px solid #d3d3d3;
     box-shadow: 3px 2px 8px 0 #22222222;
     border-radius: 6px;
+    z-index: 100;
+    background: #fff;
 }
-.container .card:nth-child(2){
+
+.card:hover, .container .card:nth-child(2):hover {
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+.container .card:nth-child(2) {
     transform: scale(1.03);
 }
-.best{
+
+.best {
     background: #001051;
 }
+
 .card-content {
     display: flex;
     flex-direction: column;
@@ -118,5 +151,4 @@ ul li::before {
     position: relative;
     right: 23px;
     top: 16px;
-
 }
