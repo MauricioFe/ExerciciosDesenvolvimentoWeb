@@ -2,9 +2,14 @@
 * TODO COMPONENTE 1 
 *****************/
 *{
-    background: whitesmoke;
     margin: 0;
     padding: 0;
+}
+body{
+    background: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
 }
 /** FIM DO COMPONENTE 1 **/
 
@@ -29,6 +34,11 @@
     font-size: 1rem;
 }
 
+.menu a:hover {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 /** FIM DO COMPONENTE 2 **/
 
 /**************** 
@@ -37,12 +47,27 @@
 
 .testemunhos {
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .testemunho {
     padding: 3rem;
+    width: 30%;
+    margin: 1%;
+    height: 100%;
+    background: #d3d3d3;
+    border-radius: 5px;
+    box-shadow: 2px 4px 15px 0 rgba(0, 0, 0, 0.3);
 }
-
+.icone i{
+    font-size: 3em;
+    color: blue;
+}
 .testemunho .declaracao {
     font-style: italic;
 }
@@ -51,6 +76,7 @@
     font-weight: bold;
     font-size: .8em;
     text-align: right;
+    margin-top: 15px;
 }
 
 /** FIM DO COMPONENTE 3 **/
