@@ -87,8 +87,28 @@ body{
 
 .notas {
     padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.notas table{
+    width: 50%;
+    font-family: 1.3em;
+}
+.notas table th, .notas table td{
+    text-align: center;
+    border-bottom: 3px solid whitesmoke;
+    
+}
+.notas table td{
+    border-bottom: 1px solid whitesmoke;
+}
+
+.notas table td:hover{
+    background: blue;
+    font-weight: bold;
+}
 /** FIM DO COMPONENTE 4 **/
 
 .banner {
@@ -129,4 +149,7 @@ footer {
     text-align: center;
     padding-top: 15px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
