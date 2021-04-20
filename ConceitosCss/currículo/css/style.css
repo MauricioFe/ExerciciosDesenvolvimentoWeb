@@ -22,3 +22,72 @@ header h1 {
     font-size: 2.3rem;
     color: #f6f6f6;
 }
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+aside {
+    background: #F5F5F5;
+    width: 30%;
+    height: 100vh;
+}
+
+.contato-item {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contato-item {
+    padding: 1.1%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.feather-16 {
+    width: 32px;
+    height: 32px;
+}
+
+.contato-item span, .contato-item a {
+    margin-left: 1.6rem;
+}
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-right: 5%;
+}
+
+.resumo {
+    width: 95%;
+    margin: 2rem auto;
+}
+
+.resumo h3 {
+    font-size: 2rem;
+    padding: 1rem;
+    padding-left: 0;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.resumo h3::after {
+    content: "";
+    width: 200px;
+    height: 3px;
+    background-color: #3C5769;
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+}
+
+.resumo p{
+    text-align: justify;
+    line-height: 25px;
+}
