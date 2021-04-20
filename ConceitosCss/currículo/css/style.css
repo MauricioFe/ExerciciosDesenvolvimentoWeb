@@ -31,7 +31,7 @@ header h1 {
 aside {
     background: #F5F5F5;
     width: 30%;
-    height: 100vh;
+    height: 100%;
 }
 
 .contato-item {
@@ -40,27 +40,48 @@ aside {
 }
 
 .contato-item {
-    padding: 1.1%;
     margin-top: 1rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+font-size: 0.8rem;
 }
 
 .feather-16 {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
 }
 
 .contato-item span, .contato-item a {
     margin-left: 1.6rem;
 }
+.formacao, .competencias, .certificados{
+    width: 100%;
+    padding: 15px 30px;
+}
 
+aside h4{
+    font-size: 1.2rem;
+}
+.formacao p{
+    text-align: justify;
+    line-height: 25px;
+    font-size: 0.9rem;
+}
+.formacao h5{
+    font-size: 1rem;
+    margin: 2% 0;
+}
 .container-left {
     display: flex;
     flex-direction: column;
     width: 60%;
     margin-right: 5%;
+}
+
+aside ul{
+    margin-left: 18px;
+    margin-top: 1.5rem;
 }
 
 .resumo {
@@ -69,6 +90,7 @@ aside {
 }
 
 h3 {
+    display: inline-block;
     font-size: 2rem;
     padding: 1rem;
     padding-left: 0;
@@ -79,7 +101,7 @@ h3 {
 
 h3::after {
     content: "";
-    width: 200px;
+    width: 60%;
     height: 3px;
     background-color: #3C5769;
     position: absolute;
@@ -87,36 +109,58 @@ h3::after {
     left: 2px;
 }
 
-.resumo p{
+.resumo p {
     text-align: justify;
     line-height: 25px;
 }
-.experiencia{
+
+.experiencia {
     padding: 1.2rem 0;
 }
-.cabecalho-experiencia{
+
+.cabecalho-experiencia {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
-.cabecalho-experiencia img{
+
+.cabecalho-experiencia img {
     width: 200px;
 }
-.cabecalho-experiencia .dados-experiencia{
+
+.cabecalho-experiencia .dados-experiencia {
     margin-left: 3%;
 }
-.cabecalho-experiencia .dados-experiencia h4{
+
+.cabecalho-experiencia .dados-experiencia h4 {
     font-size: 1.1rem;
     color: #222;
     font-weight: 900;
 }
-.cabecalho-experiencia .dados-experiencia h4, .experiencia .dados-experiencia p{
+
+.cabecalho-experiencia .dados-experiencia h4, .experiencia .dados-experiencia p {
     margin: 1% auto;
 }
 
-.descricao-experiencia{
+.descricao-experiencia {
     font-size: 0.9rem;
     text-align: justify;
     line-height: 25px;
 }
+
+.divisor {
+    height: 2px;
+    background-color: rgb(149, 149, 149);
+    width: 100%;
+    margin: 1rem 0;
+}
+.realizacao-item, .idioma-item{
+    margin-bottom: 1rem;
+}
+
+.realizacao-item:nth-child(3), .idioma-item:nth-child(3){
+    margin-top: 1rem;
+}
+
+
 
