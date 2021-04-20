@@ -90,7 +90,7 @@ aside ul {
 
 .resumo, .historico, .realizacoes, .idiomas {
     width: 95%;
-    margin: 2rem auto;
+    margin: 1.1rem auto 0;
 }
 
 h3 {
@@ -193,6 +193,9 @@ h3::after {
 }
 
 @media (max-width:789px) {
+    h3{
+        font-size: 1.5rem;
+    }
     .contato-item {
         font-size: 0.5rem;
     }
@@ -229,7 +232,7 @@ h3::after {
     }
     .resumo, .historico, .realizacoes, .idiomas {
         width: 95%;
-        margin: 0.5rem auto;
+        margin: 0.5rem auto 0;
     }
     
 }
