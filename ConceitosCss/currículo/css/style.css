@@ -44,34 +44,38 @@ aside {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-font-size: 0.8rem;
+    font-size: 1.1rem;
 }
 
 .feather-16 {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
 }
 
 .contato-item span, .contato-item a {
-    margin-left: 1.6rem;
-}
-.formacao, .competencias, .certificados{
-    width: 100%;
-    padding: 15px 30px;
+    margin-left: 1.3rem;
 }
 
-aside h4{
+.formacao, .competencias, .certificados {
+    width: 100%;
+    padding: 0.9rem 1.9rem;
+}
+
+aside h4 {
     font-size: 1.2rem;
 }
-.formacao p{
+
+.formacao p {
     text-align: justify;
     line-height: 25px;
     font-size: 0.9rem;
 }
-.formacao h5{
+
+.formacao h5 {
     font-size: 1rem;
     margin: 2% 0;
 }
+
 .container-left {
     display: flex;
     flex-direction: column;
@@ -79,12 +83,12 @@ aside h4{
     margin-right: 5%;
 }
 
-aside ul{
+aside ul {
     margin-left: 18px;
     margin-top: 1.5rem;
 }
 
-.resumo {
+.resumo, .historico, .realizacoes, .idiomas {
     width: 95%;
     margin: 2rem auto;
 }
@@ -154,13 +158,94 @@ h3::after {
     width: 100%;
     margin: 1rem 0;
 }
-.realizacao-item, .idioma-item{
+
+.realizacao-item, .idioma-item {
     margin-bottom: 1rem;
 }
 
-.realizacao-item:nth-child(3), .idioma-item:nth-child(3){
+.realizacao-item:nth-child(3), .idioma-item:nth-child(3) {
     margin-top: 1rem;
 }
 
+@media (max-width: 924px) {
+    header h1 {
+        font-size: 2.1rem;
+    }
+    aside h4 {
+        font-size: 1rem;
+    }
+    .contato-item {
+        font-size: 0.8rem;
+    }
+    .contato-item span {
+        margin-left: 1rem;
+    }
+    .formacao h5 {
+        font-size: 0.9rem;
+    }
+    .formacao p {
+        font-size: 0.8rem;
+    }
+    .formacao, .competencias, .certificados {
+        width: 100%;
+        padding: 0.6rem 1.6rem;
+    }
+}
 
+@media (max-width:789px) {
+    .contato-item {
+        font-size: 0.5rem;
+    }
+    .feather-16 {
+        width: 14px;
+        height: 14px;
+    }
+    .contato-item span {
+        margin-left: 1rem;
+    }
+    .formacao h5 {
+        font-size: 0.7rem;
+        font-weight: 500;
+        line-height: 15px;
+        width: 100%;
+    }
+    .formacao p, ul li {
+        font-size: 0.6rem;
+        line-height: 16px;
+    }
+    .formacao, .competencias, .certificados {
+        width: 100%;
+        padding: 0.3rem 1.3rem;
+    }
+    .container-left p {
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+    .cabecalho-experiencia img {
+        width: 150px;
+    }
+    .cabecalho-experiencia .dados-experiencia h4 {
+        font-size: 0.8rem;
+    }
+    .resumo, .historico, .realizacoes, .idiomas {
+        width: 95%;
+        margin: 0.5rem auto;
+    }
+    
+}
 
+@media(max-width:500px){
+    header h1{
+        font-size: 1.5rem;    
+    }
+    .container{
+        display: initial;
+    }
+    aside{
+        display: none;
+    }
+    .container-left{
+        width: 90%;
+        margin:0 auto;
+    }
+}
