@@ -1,5 +1,6 @@
 body {
     font-family: 'Rubik', sans-serif;
+    color: #efefef;
 }
 
 header {
@@ -91,16 +92,14 @@ header {
     border: 1px solid rgb(239, 239, 239);
     font-weight: 600;
     font-size: 1.4rem;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-.texto-introducao a img{
+.texto-introducao a img {
     margin-right: 12px;
     width: 20px;
     height: 20px;
-    
 }
-
 
 .texto-introducao a:hover {
     background-image: linear-gradient(to right, #4458dc80 0%, #844fee86 100%);
@@ -116,6 +115,100 @@ header {
 }
 
 #sobre {
-    background: #202020;
+    background: url('../img/space-two.svg') #202020 no-repeat;
+    background-position-y: -50px;
     height: 100vh;
+    position: relative;
 }
+
+.titulo-secao {
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.titulo-secao h2 {
+    display: inline-block;
+    font-size: 2.6rem;
+    font-weight: 300;
+    position: relative;
+}
+
+.titulo-secao h2::after {
+    content: "";
+    display: inline-block;
+    width: 30%;
+    height: 3px;
+    background-color: #4458dc;
+    position: absolute;
+    bottom: -15px;
+    left: 5px;
+}
+
+#sobre .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-sobre {
+    width: 45%;
+    margin-right: 2.5%;
+}
+
+.img-sobre img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.txt-sobre {
+    width: 45%;
+    margin-left: 2.5%;
+    height: 100%;
+    z-index: 100;
+}
+
+.titulo-sobre {
+    margin-bottom: 0.5rem;
+}
+
+.titulo-sobre h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.conteudo-sobre {
+    line-height: 1.6rem;
+    text-align: justify;
+}
+
+.float-planet {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 0;
+    animation: MoveUpDown 2s linear infinite;
+}
+
+
+@-webkit-keyframes MoveUpDown {
+    0%, 100% {
+      top: 0;
+    }
+    50% {
+      top: 10px;
+    }
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      top: 0;
+    }
+    50% {
+      top: 10px;
+    }
+  }
+  
