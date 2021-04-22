@@ -323,7 +323,6 @@ header {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    margin-right: 0.6rem;
 }
 
 .card-footer a {
@@ -343,5 +342,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem 0;
+}
+
+.row:nth-child(2) {
+    margin-top: 2rem;
 }
