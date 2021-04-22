@@ -230,15 +230,18 @@ header {
 
 .card {
     width: 23%;
-    height: 360px;
     background: #161616;
     border-radius: 8px;
     box-shadow: 2px 2px 14px 5px #4458dc15;
 }
 
-.card:hover{
-transform: scale(1.050);
-transition: ease-in-out 0.3s;
+#servicos .card {
+    height: 360px;
+}
+
+.card:hover {
+    transform: scale(1.050);
+    transition: ease-in-out 0.3s;
 }
 
 .card-content {
@@ -256,7 +259,6 @@ transition: ease-in-out 0.3s;
     height: 64px;
     justify-self: flex-start;
 }
-
 
 .card-icon img {
     width: 100%;
@@ -280,15 +282,66 @@ transition: ease-in-out 0.3s;
     padding: 0 1.3rem;
 }
 
-.img-dev, .img-dev-woman{
+.img-dev, .img-dev-woman {
     width: 200px;
     height: 200px;
     position: absolute;
     right: 5%;
 }
 
-.img-dev-woman{
+.img-dev-woman {
     right: 0;
     left: 5%;
     top: -2%;
+}
+
+#projetos {
+    background: #161616;
+    height: 100%;
+}
+
+#projetos .card {
+    width: 30%;
+}
+
+#projetos .card-text h4 {
+    font-size: 1.2rem;
+}
+
+#projetos .card-text p {
+    font-size: 1rem;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: #252525;
+    margin: 1rem 0;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.6rem;
+}
+
+.card-footer a {
+    color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43%;
+    height: 40px;
+    background: #8330A5;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
 }
