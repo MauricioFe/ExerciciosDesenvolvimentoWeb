@@ -1,0 +1,79 @@
+div {
+    width: 150px;
+    height: 150px;
+}
+
+.anotacoes {
+    width: 70%;
+    text-align: justify;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+.container {
+    width: 90%;
+    font-size: 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scale {
+    background-color: red;
+}
+
+.scale:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.rotate {
+    background-color: royalblue;
+}
+
+.rotate:hover {
+    transform: rotate(150deg);
+    transition: 0.5s;
+}
+
+.translate {
+    background: chartreuse;
+}
+
+.translate:hover {
+    transform: translate(30px);
+    transition: 0.5s;
+}
+
+.skew {
+    background: cornflowerblue;
+}
+
+.skew:hover {
+    transform: skew(20deg);
+    transition: 0.5s;
+}
+
+.matrix {
+    background: cyan;
+}
+
+/*
+    The values represent the following functions:
+    matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() )
+*/
+
+.matrix:hover {
+    transform: matrix(3, 1, 1, 3, 200, 80);
+    transition: 0.5s;
+}
+
+.perspective {
+    background: darkorchid;
+}
+/* O perspective representa a distância entre o usuário e o plano z é interessante
+trabalhar ele com outros valores do transform*/
+.perspective:hover {
+    transform:  perspective(7.5cm) rotateX(-15deg) rotateY(15deg);
+    transition: 0.5s;
+}
