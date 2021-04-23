@@ -429,3 +429,119 @@ footer h2 {
     height: 48px;
     margin: 0 2rem;
 }
+
+@media (max-width:320px) {
+    .top h1 {
+        font-size: 2rem;
+    }
+    nav {
+        display: none;
+    }
+    .texto-introducao {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        line-height: 2rem;
+    }
+    .texto-introducao p {
+        font-size: 0.9rem;
+    }
+    .texto-introducao h2 {
+        width: 90%;
+        font-size: 1.6rem;
+        align-self: flex-start
+    }
+    #home .container {
+        justify-content: space-evenly;
+    }
+    .ilustracao-introducao {
+        width: 90%;
+    }
+    .planet {
+        display: none;
+    }
+    #home {
+        background-size: 150%;
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .img-sobre {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .img-sobre img {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .float-planet {
+        display: none;
+    }
+    .titulo-secao {
+        padding: 2rem 0;
+    }
+    .titulo-secao h2 {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 300;
+        position: relative;
+    }
+    .titulo-secao h2::after {
+        display: none;
+    }
+    section {
+        height: 100% !important;
+    }
+    .txt-sobre {
+        width: 90%;
+        height: initial;
+        margin: 1.6rem;
+    }
+    .img-dev-woman {
+        display: none;
+    }
+    .img-dev {
+        display: none;
+    }
+    .card {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    .card-content {
+        padding: 1rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    .row {
+        flex-direction: column
+    }
+    .row:nth-child(2) {
+        margin-top: 0;
+    }
+    #projetos {
+        padding: 0rem;
+    }
+    #projetos .card {
+        width: 90%;
+    }
+    .img-conhecimentos {
+        display: none;
+    }
+    .range-conhecimento {
+        width: 90%;
+    }
+    footer h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .icons a img {
+        width: 32px;
+        height: 32px;
+    }
+}
