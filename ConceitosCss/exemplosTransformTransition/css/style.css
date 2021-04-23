@@ -18,6 +18,8 @@ div {
     justify-content: space-between;
 }
 
+/*O scale faz o elemento crescer de forma proporcional*/
+
 .scale {
     background-color: red;
 }
@@ -26,7 +28,7 @@ div {
     transform: scale(1.1);
     transition: 0.5s;
 }
-
+/*Trabalha a rotação do elemento*/
 .rotate {
     background-color: royalblue;
 }
@@ -36,6 +38,7 @@ div {
     transition: 0.5s;
 }
 
+/*movimenta o elemento */
 .translate {
     background: chartreuse;
 }
@@ -44,7 +47,7 @@ div {
     transform: translate(30px);
     transition: 0.5s;
 }
-
+/*define uma transformação que inclina um elemento no plano 2D*/
 .skew {
     background: cornflowerblue;
 }
@@ -53,7 +56,7 @@ div {
     transform: skew(20deg);
     transition: 0.5s;
 }
-
+/*É uma forma de trabalhar uma matrix com os valore s já conhecidos do transform*/
 .matrix {
     background: cyan;
 }
