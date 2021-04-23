@@ -80,3 +80,4 @@ trabalhar ele com outros valores do transform*/
     transform:  perspective(7.5cm) rotateX(-15deg) rotateY(15deg);
     transition: 0.5s;
 }
+
