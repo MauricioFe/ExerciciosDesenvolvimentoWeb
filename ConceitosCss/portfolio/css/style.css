@@ -298,10 +298,12 @@ header {
 #projetos {
     background: #161616;
     height: 100%;
+    padding-bottom: 5rem;
 }
 
 #projetos .card {
     width: 30%;
+    background: #1f1f1f;
 }
 
 #projetos .card-text h4 {
@@ -346,4 +348,84 @@ header {
 
 .row:nth-child(2) {
     margin-top: 2rem;
+}
+
+#conhecimentos {
+    height: 100vh;
+    background-color: #1f1f1f;
+}
+
+#conhecimentos .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#conhecimentos .img-conhecimentos img {
+    width: 100%;
+}
+
+.img-conhecimentos {
+    width: 45%;
+    margin-right: 2.5%;
+}
+
+.range-conhecimento {
+    width: 45%;
+    margin-left: 2.5%;
+}
+
+.range-descricao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.container-range {
+    margin-bottom: 1rem;
+}
+
+.range-skills {
+    height: 40px;
+    width: 100%;
+    background-color: #CCC;
+    position: relative;
+}
+
+.range-skills .range-box {
+    position: absolute;
+    height: 100%;
+    background-color: #8330A5;
+    width: 90%;
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient( 180deg, rgba(0, 0, 0, 0.1), #222222), linear-gradient( 0deg, rgba(0, 0, 0, 0.1), #222222), url(../img/footer.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    justify-content: space-evenly;
+    background-position: 0px 0px, 38% 45%;
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+}
+
+footer h2 {
+    color: #efefef;
+    font-weight: 300;
+    font-size: 2.3rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.icons a img {
+    width: 48px;
+    height: 48px;
+    margin: 0 2rem;
 }
