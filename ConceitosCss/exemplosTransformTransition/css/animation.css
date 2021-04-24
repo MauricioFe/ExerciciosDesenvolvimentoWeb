@@ -1,0 +1,13 @@
+.animation{
+    animation: bacon 1s infinite alternate;
+    background: red;
+}
+
+@keyframes bacon {
+    0% {
+        width:100px;
+    }
+    100% {
+        width: 200px;
+    }
+}
