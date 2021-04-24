@@ -1,2 +1,88 @@
 /*As transições CSS permitem que você altere os valores das 
 propriedades suavemente, ao longo de um determinado período*/
+
+.opacity {
+    background: darkorchid;
+    opacity: 0.5;
+    transition: opacity 5s;
+}
+
+.border-inset {
+    transition: box-shadow 1s;
+}
+
+.border-inset {
+    background: darkslateblue;
+    box-shadow: inset 0 0 0 25px #53a7ea;
+}
+
+.transform-scale-grow {
+    background: greenyellow;
+    transform: scale(1.2);
+    transition: transform 5s;
+}
+
+.transform-scale-shrink {
+    background: goldenrod;
+    transform: scale(0.5);
+    transition: transform 5s;
+}
+
+.transform-scale-image {
+    overflow: hidden;
+}
+
+.transform-scale-image img {
+    width: 100%;
+    transform: scale(1.5);
+    transition: transform 5s;
+    will-change: transform;
+}
+
+.transform-scale-translate {
+    background: hotpink;
+    transform: translate(35px);
+    transition: transform 5s;
+}
+
+.filter-blur {
+    background: indigo;
+    filter: blur(35px);
+    transition: filter 15s;
+}
+
+.filter-contrast {
+    background-color: thistle;
+    filter: contrast(120%);
+    transition: filter 35s;
+}
+
+.filter-sepia {
+    background: tomato;
+    filter: sepia(100%);
+    transition: filter 15s;
+}
+
+.filter-gray-scale {
+    background-color: turquoise;
+    transition: filter 5s;
+    filter: grayscale(100%);
+}
+
+.filter-drop-shadow {
+    background: violet;
+    transition: filter 5s;
+    will-change: transform;
+    filter: drop-shadow(2px 2px 15px #000);
+}
+
+.background-color{
+    background: yellow;
+    transition:  background-color 5s;
+}
+
+.background-blend-mode{
+    background: brown;
+    background-blend-mode: difference;
+    transition: all 6s;
+}
