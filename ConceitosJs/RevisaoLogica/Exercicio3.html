@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+
+<body>
+    <script>
+        var valorBruto = parseFloat(prompt("Digite o valor do produto"))
+        var pagamento = parseInt(prompt("Digite 1 para pagamento a vista. 2 para parcelar de 3 vezes. 3 para parcerlar de 5 vezes"));
+        switch (pagamento) {
+            case 1:
+                alert("Valor final é" + valorBruto)
+                break;
+            case 2:
+                var valorFinal = valorBruto * 1.10;
+                alert("O valor final do produto quando parcelado em 3 vezes é: " + valorFinal + "\n O valor da parcela é: " + valorFinal / 3)
+                break;
+            case 3:
+                var valorFinal = valorBruto * 1.20;
+                alert("O valor final do produto quando parcelado em 3 vezes é: " + valorFinal + "\n O valor da parcela é: " + valorFinal / 3)
+                break;
+            default:
+                alert("Opção inválida")
+
+        }
+    </script>
+</body>
+
+</html>
