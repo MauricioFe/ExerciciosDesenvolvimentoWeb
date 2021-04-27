@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IMC</title>
 </head>
 
 <body>
     <script>
         var peso = parseFloat(prompt("Insira o seu peso"))
         var altura = parseFloat(prompt("Insira sua altura"))
-        var imc = peso/(altura**)
-        if (imc <18.5) {
-            alert("Abaixo do peso")
-        }else if (imc>= 18.5 && imc<25) {
-            alert("Peso normal")
-        }else if (imc>=25 && imc <30) {
-            alert("acima do peso")
-        }else{
+        var imc = peso / (altura * 2);
+        if (imc < 18.5) {
+            alert("Abaixo do peso " + imc)
+        } else if (imc >= 18.5 && imc < 25) {
+            alert("Peso normal "+imc)
+        } else if (imc >= 25 && imc < 30) {
+            alert("acima do peso "+imc)
+        } else {
             alert("Obeso")
         }
     </script>
