@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num1 = parseInt(prompt("Informe o primeiro numero"));
+        var num2 = parseInt(prompt("Informe o segundo numero"));
+        var opcao = parseInt(prompt("Informe a opcao desejada - 1 para somar - 2 para subtrair"));
+        switch (opcao) {
+            case 1: 
+                var resul = (num1 + num2);
+                alert("A soma do numeros " + resul);
+                break;
+            case 2: 
+                var result = (num1 - num2);
+                alert("A subtracao dos numeros " + result);
+                break;
+            default:
+                alert("Opção Inválida" + resul);
+        }
+    </script>
+</body>
+
+</html>
