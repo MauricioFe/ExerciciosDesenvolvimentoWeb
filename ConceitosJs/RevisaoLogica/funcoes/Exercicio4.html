@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Exercício 4</title>
+</head>
+
+<body>
+    <script>
+        function calculaAumento(salario) {
+            if (salario <= 1080)
+                return salario * 1.20;
+            else if (salario > 1080 && salario <= 1700)
+                return salario * 1.15
+            else if (salario > 1700 && salario <= 2500)
+                return salario * 1.10
+            return salario * 1.05
+        }
+        var salario = parseFloat(prompt("Digite o seu salário: "));
+        var aumento = calculaAumento(salario);
+        alert("Salario antes do reajuste: " + salario)
+        alert("Percentual de aumento: " + ((aumento - salario) * 100 / salario).toFixed(2) + "%")
+        alert("Valor do aumento: " + (aumento - salario).toFixed(2))
+        alert("Novo salário: " + aumento.toFixed(2))
+    </script>
+</body>
+
+</html>
