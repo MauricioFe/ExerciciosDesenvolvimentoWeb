@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Exercício 3</title>
+</head>
+
+<body>
+    <script>
+        function calculaNota(notaB1, notaB2, notaB3, notaB4, notaRec = 0) {
+            var soma = notaB1 + notaB2 + notaB3 + notaB4;
+
+            if (notaRec > 0)
+                alert("Nota da recuperação: " + notaRec)
+            else
+                alert("Soma das notas do usuário: " + soma)
+        }
+        var notab1 = parseInt(prompt("digite a nota do primeiro bimestre"))
+        var notab2 = parseInt(prompt("digite a nota do segundo bimestre"))
+        var notab3 = parseInt(prompt("digite a nota do terceiro bimestre"))
+        var notab4 = parseInt(prompt("digite a nota do quarto bimestre"))
+        var media = (notab1 + notab2 + notab3 + notab4) / 4;
+        if (media < 60) {
+            var notaRec = parseInt(prompt("digite a nota final da recuperação"))
+            calculaNota(notab1, notab2, notab3, notab4, notaRec)
+        } else {
+            calculaNota(notab1, notab2, notab3, notab4)
+        }
+    </script>
+</body>
+
+</html>
