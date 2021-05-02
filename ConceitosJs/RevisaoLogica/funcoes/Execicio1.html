@@ -5,37 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funções - Exercício 1</title>
+    <title>Document</title>
 </head>
 
 <body>
     <script>
-        var media = 0;
-        var regular = 0;
+        var quantidadePessoasRegular = 0;
         var bom = 0;
-        var total = 0;
-        for (var i = 0; i < 10; i++) {
-            var idade = parseInt(prompt("digite a sua idade"))
-            var pontuacao = parseInt(prompt("digite a pontuação no seguinte critério: 3 - ótimo; 2 - bom; 1 - regular"));
+        var soma = 0;
+        for (var i = 0; i <= 10; i++) {
+            var idade = parseInt(prompt("Coloque a sua idade"));
+            var pontuacao = parseInt(prompt("Coloque a sua pontuação"));
             switch (pontuacao) {
+                case 3:
+                    soma = soma + idade;
+                    break;
                 case 1:
-                    regular++;
+                    /*quantidadePessoasRegular++*/
+                    quantidadePessoasRegular = quantidadePessoasRegular + 1;
                     break;
                 case 2:
                     bom++;
                     break;
-                case 3:
-                    break;
                 default:
-                    alert("Opção inválida")
-                    break
+                    alert("Opção inválida. Digite 1 ou 2 ou 3");
+                    break;
             }
-            total++;
-            media += idade;
         }
-        alert("média das idades : " + media / i)
-        alert("Número de pessoas que responderam regular: " + regular);
-        alert("Porcentagem das pessoas que responderam " + (100 * bom) / i + "%")
+
+        alert(`média idades ótimo ${mediaOtimo(soma, i)}`);
+        alert(`Quantidade de pessoas que votaram regular ${quantidadePessoasRegular}`);
+        alert(`Porcentagem de pessoas que votaram em bom ${porcentagemBom(bom)}%`);
+
+        function mediaOtimo(somaIdade, divisor) {
+            var media = somaIdade / divisor;
+            return media;
+        }
+
+
+        function porcentagemBom(quantidadeBom) {
+            return (quantidadeBom / i) * 100;
+        }
+
+
 
     </script>
 </body>
