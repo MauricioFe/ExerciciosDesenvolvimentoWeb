@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+
+<body>
+    <p id="paragrafo">123
+        <span>teste</span>
+        123
+        <span>Lorem <strong>negrito<strong></span>
+        123
+    </p>
+    <ul>
+        <li>111</li>
+        <li>222</li>
+        <li id="item">333</li>
+        <li>444</li>
+        <li>555</li>
+        <li>666</li>
+        <li>777</li>
+        <li>888</li>
+    </ul>
+</body>
+<script>
+    /*
+    1- Exiba apenas o texto da tag com id=paragrafo (sem tags).
+    2- Exiba em tela o conteudo dentro das tags <span>.
+    3 -obtenha o elemento li com o texto 666 dentro dele e exiba esse valor
+    4 -Crie uma função chamada exibirInnerHTML que receberá 1 parametro
+    (um elemento) e dentro da função escreverá o innerHTML no console.
+     Repita essa ação para as tags <p>, <strong>, e <li> com id=item.*/
+
+    let paragrafo = document.getElementById("paragrafo");
+    console.log(`1- Exiba apenas o texto da tag com id=paragrafo (sem tags): ${paragrafo.innerText}`)
+    let spans = document.querySelectorAll("#paragrafo span");
+    let textSpan = '2- Exiba em tela o conteudo dentro das tags <span>: ';
+    for (let i = 0; i < spans.length; i++) {
+        textSpan += spans[i].innerText + " ";
+    }
+    console.log(textSpan);
+
+    let li = document.getElementsByTagName("li");
+    console.log(`obtenha o elemento li com o texto 666 dentro dele e exiba esse valor ${li[6]}`);
+
+
+    let item = document.getElementById("item");
+    let strong = document.getElementsByTagName("strong")
+    criaElemento(paragrafo);
+    criaElemento(item);
+    criaElemento(strong[0]);
+
+
+
+    function criaElemento(elementoHtml) {
+        console.log(`Crie uma função chamada exibirInnerHTML que receberá 1 parametro (um elemento) e dentro da função escreverá o innerHTML no console. Repita essa ação para as tags <p>, <strong>, e <li> com id=item:  ${elementoHtml.innerHTML}`)
+    }
+</script>
+
+</html>
