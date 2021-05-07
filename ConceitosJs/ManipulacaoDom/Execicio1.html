@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 1</title>
+    <title>Correção Exercício 1</title>
 </head>
 
 <body>
     <p id="paragrafo">123
         <span>teste</span>
+        <!--0-->
         123
         <span>Lorem <strong>negrito<strong></span>
+        <!--1-->
         123
-    </p>
+    </p>  
     <ul>
         <li>111</li>
         <li>222</li>
@@ -36,28 +38,31 @@
      Repita essa ação para as tags <p>, <strong>, e <li> com id=item.*/
 
     let paragrafo = document.getElementById("paragrafo");
-    console.log(`1- Exiba apenas o texto da tag com id=paragrafo (sem tags): ${paragrafo.innerText}`)
-    let spans = document.querySelectorAll("#paragrafo span");
-    let textSpan = '2- Exiba em tela o conteudo dentro das tags <span>: ';
+    console.log(`conteúdo da tag parágrafo: ${paragrafo.innerText}`);
+
+    let spans = document.querySelectorAll(`span`); //2
+
     for (let i = 0; i < spans.length; i++) {
-        textSpan += spans[i].innerText + " ";
+        console.log(spans[i].innerText);
     }
-    console.log(textSpan);
 
-    let li = document.getElementsByTagName("li");
-    console.log(`obtenha o elemento li com o texto 666 dentro dele e exiba esse valor ${li[6]}`);
-
-
-    let item = document.getElementById("item");
-    let strong = document.getElementsByTagName("strong")
-    criaElemento(paragrafo);
-    criaElemento(item);
-    criaElemento(strong[0]);
+    let liArray = document.getElementsByTagName("li");
+    console.log(`obtenha o elemento li com o texto 666 dentro dele e exiba esse valor: ${liArray[5].innerText}`);
 
 
+    let strong = document.querySelector('#paragrafo span strong');
+    let li_item = document.getElementById("item");
+    let paragrafos = document.querySelectorAll("p");
 
-    function criaElemento(elementoHtml) {
-        console.log(`Crie uma função chamada exibirInnerHTML que receberá 1 parametro (um elemento) e dentro da função escreverá o innerHTML no console. Repita essa ação para as tags <p>, <strong>, e <li> com id=item:  ${elementoHtml.innerHTML}`)
+    function exibirInnerHTML(elemento) {
+        console.log(elemento.innerHTML);
+    }
+
+
+    exibirInnerHTML(strong);
+    exibirInnerHTML(li_item);
+    for (let i = 0; i < paragrafos.length; i++) {
+        exibirInnerHTML(paragrafos[i]);
     }
 </script>
 
