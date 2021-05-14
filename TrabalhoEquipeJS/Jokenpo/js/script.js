@@ -2,43 +2,70 @@ let pontuacaoJogador,
     pontuacaoComputador,
     vencedor,
     escolhaJogador,
-    escolharComputador;
+    escolhaComputador;
 
 
-let pedra1 = document.querySelector(".pedra1");
-let papel1 = document.querySelector(".papel1");
-let tesoura1 = document.querySelector(".tesoura1");
+let pedra = document.querySelector(".pedra");
+let papel = document.querySelector(".papel");
+let tesoura = document.querySelector(".tesoura");
+let pc = document.querySelector(".resultado-pc");
 
 function getEscolhaComputador() {
-    switch (Math.round(Math.round() * 2)) {
+    let escolha = Math.round(Math.random() * 2);
+    console.log(escolha);
+    switch (escolha) {
         case 0:
-            escolharComputador = "pedra"
+            escolhaComputador = "pedra"
             break;
         case 1:
-            escolharComputador = "papel"
+            escolhaComputador = "papel"
             break;
         case 2:
-            escolharComputador = "tesoura"
+            escolhaComputador = "tesoura"
             break;
+
     }
+    return escolhaComputador;
 }
 
 
 
-pedra1.addEventListener('click', () => {
+pedra.addEventListener('click', () => {
     escolhaJogador = "pedra";
-    getEscolhaComputador();
-    if (escolharComputador == "pedra")
-        alert("Empate")
-    else if (escolharComputador == "papel")
+    let escolhaComputador = getEscolhaComputador();
+    pc.innerHTML = `<h2>A escolha do computador foi:</h2>
+    <img src='img/${escolhaComputador}.png'/>`;
+    console.log(escolhaComputador)
+    if (escolhaComputador === "pedra")
+        alert("Empatou")
+    else if (escolhaComputador === "papel")
         alert("Perdeu")
-    else
+    else if (escolhaComputador === "tesoura")
         alert("ganhou")
 });
-papel1.addEventListener('click', () => {
+papel.addEventListener('click', () => {
     escolhaJogador = "papel";
+    let escolhaComputador = getEscolhaComputador();
+    pc.innerHTML = `<h2>A escolha do computador foi:</h2>
+    <img src='img/${escolhaComputador}.png'/>`;
+    if (escolhaComputador === "pedra")
+        alert("Ganhou")
+    else if (escolhaComputador === "papel")
+        alert("Empatou")
+    else if (escolhaComputador === "tesoura")
+        alert("Perdeu")
 });
-tesoura1.addEventListener('click', () => {
+tesoura.addEventListener('click', () => {
     escolhaJogador = "tesoura";
+    let escolhaComputador = getEscolhaComputador();
+    console.log(escolhaComputador);
+    pc.innerHTML = `<h2>A escolha do computador foi:</h2>
+    <img src='img/${escolhaComputador}.png'/>`;
+    if (escolhaComputador === "pedra")
+        alert("Perdeu")
+    else if (escolhaComputador === "papel")
+        alert("Ganhou")
+    else if (escolhaComputador === "tesoura")
+        alert("Empatou")
 });
 
