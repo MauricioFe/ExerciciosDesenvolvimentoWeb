@@ -16,11 +16,13 @@
 
 <body>
     <header>
-        <h1>Bora jogar um pouquinho</h1>
+        <h1>Pedra Papel e Tesoura</h1>
     </header>
     <div class="container">
-        <div class="title">
-            <h1 >Pedra Papel e Tesoura</h1>
+        <div class="player">
+            <img class="pedra" src="img/pedra.png" alt="Pedra">
+            <img class="papel" src="img/papel.png" alt="Papel">
+            <img class="tesoura" src="img/tesoura.png" alt="Tesoura">
         </div>
         <div class="placar">
             <label for="pontuacaoJogador">Jogador</label>
@@ -28,17 +30,17 @@
             <p>x</p>
             <input type="text" id="pontuacaoComputador" readonly>
             <label for="pontuacaoComputador">Computador</label>
+            <p class="empate">Empate</p>
+        </div>
+        <div class="computador">
+            <img class="pedra-pc" src="img/pedra.png" alt="Pedra">
+            <img class="papel-pc" src="img/papel.png" alt="Papel">
+            <img class="tesoura-pc" src="img/tesoura.png" alt="Tesoura">
         </div>
 
-        <div class="player1">
-            <img class="pedra" src="img/pedra.png" alt="Pedra">
-            <img class="papel" src="img/papel.png" alt="Papel">
-            <img class="tesoura" src="img/tesoura.png" alt="Tesoura">
-        </div>
+
     </div>
-    <div class="resultado-pc">
-        
-    </div>
+
     <script src="js/script.js"></script>
 </body>
 

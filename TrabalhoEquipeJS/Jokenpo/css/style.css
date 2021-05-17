@@ -32,7 +32,7 @@ img {
     margin: 15px;
 }
 
-.player1 {
+.player, .computador {
     margin: 3rem 0;
     display: flex;
     justify-content: space-evenly;
@@ -43,4 +43,12 @@ img {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.empate {
+    display: none;
+}
+
+input {
+    text-align: center;
 }
