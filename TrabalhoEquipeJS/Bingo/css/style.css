@@ -27,8 +27,6 @@ td {
     text-align: center;
 }
 
-
-
 .btn-gerar {
     width: 250px;
     height: 65px;
@@ -41,4 +39,12 @@ td {
     justify-content: center;
     cursor: pointer;
     border-radius: 15px;
+}
+
+.btn-field {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
 }
